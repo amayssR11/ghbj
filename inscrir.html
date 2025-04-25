@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>inscrir</title>
+    <style type="text/css">
+        body{display: flex;
+            
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            background-image: url(../image/back.jpg);
+    
+            background-size:cover;
+            background-position: center;
+             font-family: "Montserrat", sans-serif;
+        }
+        .doc{
+            background: rgba(255,255,255, .5);
+            backdrop-filter:blur(2px);
+            border-radius: 5px;
+            padding: 15px 50px;
+            width: 400px;
+        }
+        .doc .exit{
+            position: absolute; 
+            top:0;
+            color: #fff;
+            right:0;
+            font-size: 0.9em;
+            font-weight: 600;
+            border-radius:0  5px;
+            border:1.5px solid #fff0;
+            width: 40px;
+            background-color: rgba(0, 0, 0, 0.322);
+        }
+        .doc .exit:hover{
+            background: rgba(255,2,5, .8);
+            border:2px solid #29d9d5;
+            box-shadow: 0px 4px 4px  rgba(255,0,0, .8),  -4px 0px 4px  rgba(255,0,0, .8);
+            color: #fff;
+        }
+        .doc h2{
+            text-align: center;
+            color: rgb(232, 241, 246);
+            margin-bottom: 10px; 
+            font-size: 2.5em;
+        }
+        
+        .inst {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .inst input{
+            background: rgba(255,255,255, .5);
+            height: 2em;
+            border:1.5px solid #fff0; 
+            border-radius: 40px;
+            font-size: 0.9em;
+            font-weight: 500;
+            padding-left: 15px;
+            margin-top: 20px;
+            width: 90%;             
+        }
+        .inli {
+            display: flex;
+              
+        }
+        .inst input:hover{  
+            box-shadow: 2px 2px 3px  rgb(0, 255, 183),  -2px -2px 3px  #29d9d5;
+              
+        }
+        .inst button{
+
+            background-color: rgba(0, 0, 0, 0.322);
+            margin: 20px 0px;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            color: rgb(249, 238, 238);
+            border:1.5px solid #fff0; 
+        }
+        .inst button:hover{
+          
+            box-shadow: 2px 2px 3px  rgb(0, 255, 183),  -2px -2px 3px  #29d9d5;
+            color: #29d9d5;
+        } 
+    </style>
+</head>
+<body><div class="doc">
+            <a href="../index.html"><button class="exit">x</button></a>
+            <h2> S'inscrire</h2>
+            <form class="inst">
+                <div class="inli">
+                    <input type="text"  name="Nom" placeholder="Nom" required>
+                    <input type="text"  name="Prenom" placeholder="Prenom" required>
+                </div>  
+                <input type="email"  name="email" placeholder="email" required>
+                <input type="password"  name="pass" placeholder="Mot de passe" required>
+                <button type="submit">Confirmer</button>
+            </form>
+        </div>
+</body>
+</html>

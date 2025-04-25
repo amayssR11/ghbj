@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paiment</title>
+    <link rel="stylesheet" href="../style/paimen.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+  <header >
+
+    <nav class="navbar">
+    <div  class="logo">
+     <h2>R.11</h2>
+    </div>
+    
+        <ul class="links">
+            
+            <li><a href="../index.html">acceuil</a></li>
+            <li><a href="achet.html" >acheter</a></li>
+            <li><a href="commande.html">commander</a></li>
+            <li><a href="propo.html">a propos</a></li>
+          
+        </ul>
+   
+    <div class="buttom">
+        <a class="con" href="login.html">se connecet</a>
+        <a class="log" href="inscrir.html">s inscrire</a>
+    </div>
+    </nav>
+  </header>
+<div class="container">
+  
+    <form  action="">
+      <a href="achet.html"> <div class="exit">x</div> </a>
+      <div class="row">
+        <div class="colum">
+          <h3 class="title">BILLING ADDRESS</h3>
+            <div class="input-box">
+               <span>Full Name :</span>
+               <input type="text" placeholder="Full Name" class="cardNum" required/>
+            </div>
+            <div class="input-box">
+              <span>Email :</span>
+              <input type="email" placeholder="Email" class="cardNum" required/>
+            </div>
+            <div class="input-box">
+              <span>ADDRESS :</span>
+              <input type="text" placeholder="ADDRESS" class="cardNum" required/>
+            </div>
+            <div class="input-box">
+              <span>City :</span>
+              <input type="text" placeholder="City" class="cardNum" required/>
+             </div>
+        
+        
+          <div class="flex">
+            <div class="input-box">
+             <span> State :</span>
+             <input type="text" placeholder="State" required>
+            </div> 
+            <div class="input-box">
+              <span>Zip Code :</span>
+              <input type="number" placeholder="123 456" min="1" required>
+           </div> 
+         </div>
+        </div>
+        
+        <div class="colum">
+          <h3 class="title">Payment</h3>
+            <div class="input-box">
+               <span>Cards Accepted :</span>
+               <a href="../image/cart1.PNG"><img src="../image/cart1.PNG" alt="cart d or"></a>
+               <a href="../image/cart2.jpg"><img src="../image/cart2.jpg" alt="cart bank"></a>
+               
+            </div> 
+            <div class="input-box">
+               <span>Name On Card :</span>
+              <input type="text" placeholder="enter name" class="cardNum" required/>
+            </div>
+            <div class="input-box">
+              <span>Credit Card Number :</span>
+              <input type="number" placeholder="XXXX-XXXX-XXXX-XXXX" class="cardNum" required/>
+            </div>
+            <div class="input-box">
+              <span>Exp.Month :</span>
+              <input type="number" placeholder="MM" class="cardNum" min="1" max="12"required/>
+           </div>
+          <div class="flex">
+            <div class="input-box">
+              <span> Exp.Year :</span>
+              <input type="number" placeholder="YY" min="2025" max="2030"required>
+            </div> 
+            <div class="input-box">
+              <span>CVV :</span>
+              <input type="number" placeholder="XXX"min="100" max="999"required>
+            </div> 
+          </div>
+        </div>
+      </div>
+       <button type="submit" class="btn">Submit</button>
+    </form>
+    
+</div>
+<!----footer----->
+
+<div class="footer">
+       <div class="row">
+            <div class="footer-colum">
+                <h4>Aide</h4>
+                 <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Informations</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Support</a></li>
+                 </ul>
+            </div>
+            <div class="footer-colum">
+                <h4>Magasin en ligne</h4>
+                  <ul> 
+                    <li><a href="#">Montres</a></li>
+                    <li><a href="#">Chaussures</a></li>
+                    <li><a href="#">Sacs</a></li>
+                    <li><a href="#">Robes</a></li>
+                  </ul>
+            </div>
+            <div class="footer-colum">
+                <h4>Suivez-nous</h4>
+                  <div class="social-links">
+                    <a href="###"><i class="fab fa-facebook-f"></i> </a>
+                    <a href="###"><i class="fab fa-instagram"></i> </a>
+                    <a href="###"><i class="fab fa-twitter"></i> </a>
+                    <a href="###"><i class="fab fa-whatsapp"></i> </a>
+                    <a href="###"><i class="fab fa-telegram"></i> </a>
+                  </div>
+            </div>
+      </div>
+    
+</div>
+
+</body>
+</html>

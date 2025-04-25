@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        /* CSS ici */
+        /* Mise en page du body */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(../image/back.jpg);
+
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Conteneur principal */
+.doc {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    padding: 15px 50px;
+    width: 400px;
+    position: relative;
+}
+
+/* Bouton de fermeture */
+.exit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.322);
+    border: 1.5px solid transparent;
+    border-radius: 0 5px;
+}
+
+.exit:hover {
+    background: rgba(255, 2, 5, 0.8);
+    border: 2px solid #29d9d5;
+    box-shadow: 0 4px 4px rgba(255, 0, 0, 0.8), -4px 0 4px rgba(255, 0, 0, 0.8);
+    color: #fff;
+}
+
+/* Titre principal */
+.doc h2 {
+    text-align: center;
+    color: #e8f1f6;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Formulaire */
+.inst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 400;
+}
+
+/* Champs de saisie */
+.inst input {
+    background: rgba(255, 255, 255, 0.5);
+    height: 2em;
+    border: 1.5px solid transparent;
+    border-radius: 40px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 15px;
+    margin-top: 20px;
+    width: 90%;
+}
+
+.inst input:hover {
+    box-shadow: 2px 2px 3px rgb(0, 255, 183), -2px -2px 3px #29d9d5;
+}
+
+/* Bouton de connexion */
+.inst button {
+    background: rgba(0, 0, 0, 0.322);
+    margin: 20px 0;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: #f9eeee;
+    border: 1.5px solid transparent;
+}
+
+.inst button:hover {
+    box-shadow: 2px 2px 3px rgb(0, 255, 183), -2px -2px 3px #29d9d5;
+    color: #29d9d5;
+}
+
+/* Ligne options */
+.inst .lin {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+        align-items: baseline;
+}
+
+.inst .lin label {
+    color: #162938;
+}
+
+.inst .lin a {
+    margin-left: 40px;
+    color: #162938;
+}
+
+/* Case à cocher */
+.inst .lin input {
+    width: 15px;
+}
+
+/* Zone d'inscription */
+.inout {
+    text-align: center;
+    font-size: 0.9em;
+    color: #162938;
+    font-weight: 600;
+}
+
+/* Bouton inscription */
+.inout button {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 0.8em;
+    color: #162938;
+    font-weight: 600;
+}
+
+.inout button:hover {
+    background: #29d9d5;
+    border: 1.5px solid transparent;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="doc">
+        <a href="../index.html">
+            <button class="exit">x</button>
+        </a>
+
+        <h2>Login</h2>
+
+        <form class="inst" action="#" method="post">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="pass" placeholder="Mot de passe" required>
+
+            <div class="lin">
+                <label>
+                    <input type="checkbox" id="srm"> Se rappeler de moi
+                </label>
+                <a href="#">Mot de passe oublié ?</a>
+            </div>
+
+            <button type="submit">Se connecter</button>
+        </form>
+
+        <div class="inout">
+            <p>Vous n'avez pas de compte ?
+                <a href="inscrir.html">
+                    <button>S'inscrire</button>
+                </a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

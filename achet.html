@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>lnd d'achat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: "Montserrat", sans-serif;
+            background-color: rgb(144, 148, 148);
+            text-align: center;
+        }
+
+        .swiper {
+            width: 90%;
+            padding-bottom: 32px ;
+        }
+
+        .swiper-slide {
+            background: #fff;
+            border-radius: 15px;
+            text-align: center;
+            color: #000;
+            padding: 10px;
+            box-shadow: -13px 12px 9px 0px #313939ba;
+        }
+
+        .swiper-slide img {
+            width:100%;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: -3px 5px 8px 3px rgb(0 0 0 / 32%);
+        }
+        
+        h2{      
+            text-align: center;
+            color: rgb(232, 241, 246);
+            font-size: 40px;
+           
+            margin-bottom: 0;
+            text-shadow: -4px 5px 2px #313939; 
+        }
+        h2:hover{
+           color:  rgb(0 255 183);
+        }
+
+        h3,p, h4 {
+            margin: 10px 0;
+        }
+        h4 {
+            color: red;
+        }
+
+        button {
+            padding: 10px;
+                background: #8175d3;
+            color: #fff;
+            border: none;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 17px;
+            font-weight: 600px
+        }
+
+        button:hover {
+            background: #0bd3cefa;
+        }
+       
+
+
+        header{
+   position: relative;
+   padding: 0 20px ;
+   background-color: rgba(0, 0, 0, 0.322);
+  box-shadow: inset 0px 7px 28px 8px rgb(0 255 183);
+    
+
+    
+}
+.navbar{
+display: flex;
+ margin:0 auto;
+ height: 60px;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.navbar .logo a {
+    font-size: x-large;
+}
+.navbar .links {
+    display: flex;
+    gap: 3em;
+    
+
+}
+
+.navbar .links li a{
+
+font-family: "Montserrat", sans-serif;
+     position: relative;
+
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:40px;
+    
+    
+}
+.navbar .links li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: aqua;
+    border-radius: 5px;
+    transform-origin:right; 
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar .links li a:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+
+}
+.buttom{
+    display: flex;
+    gap: 3em;
+   
+}
+.con{
+    color: rgb(249, 238, 238);
+    
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 50px;
+    
+}
+.con:hover{
+    color: aqua;
+    gap: 2em;
+}
+.log{
+    color:black;
+    padding: 10px;
+   background-color: rgb(238, 240, 240);
+    border-radius: 50px;
+    
+}
+.log:hover{
+    
+    gap: 2em;
+}
+ 
+p{
+   
+    text-align: center;
+    
+
+}
+
+li{  
+     list-style: none;
+}
+a{  font-size: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+ 
+   
+
+}
+a:hover{
+    color: aqua;
+
+}
+    </style>
+</head>
+<body>
+    <header >
+
+    <nav class="navbar">
+    <div  class="logo">
+     <h1>R.11</h1>
+    </div>
+    
+        <ul class="links">
+            
+            <li><a href="../index.html">acceuil</a></li>
+            <li><a href="#" >acheter</a></li>
+            <li><a href="commande.html">commander</a></li>
+            <li><a href="propo.html">a propos</a></li>
+          
+        </ul>
+   
+    <div class="buttom">
+        <a class="con" href="login.html">se connecet</a>
+        <a class="log" href="inscrir.html">s inscrire</a>
+    </div>
+    </nav>
+ 
+    
+ </header>
+    
+    <h2 id="capu">CAPUCHE</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="../image/capuche1.jpg"><img src="../image/capuche1.jpg" alt="image d une capuche"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Sweat uni capuche Gris</p>
+                <h4>2,700 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/capuche2.jpg"><img src="../image/capuche2.jpg" alt="image d une capuche"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Coupe vent avec capuche GRIS</p>
+                <h4>2,900 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="image/capuche3.jpg"><img src="../image/capuche3.jpg" alt="image d une capuche"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Parka à capuche Beige</p>
+                <h4>8,000 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/capuche4.jpg"><img src="../image/capuche4.jpg" alt="image d une capuche"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Blouson r versible capuche Kaki</p>
+                <h4>6,000 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/capuche5.jpg"><img src="../image/capuche5.jpg" alt="image d une capuche"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>T-shirt capuche Marron</p>
+                <h4>1,500 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+        </div>
+
+        <!-- Pagination et navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <h2 id="pntl">PANTALON</h2>
+     <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="../image/PANTALON1.jpg"><img src="../image/PANTALON1.jpg" alt="image d un chapeau"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Pantalon stretch multipoches Beige</p>
+                <h4>2,300 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/PANTALON2.jpg"><img src="../image/PANTALON2.jpg" alt="image d un chapeau"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Pantalon denim multipoches Violet</p>
+                <h4>2,900 DA</h4>
+                <a href="paime.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/PANTALON3.jpg"><img src="../image/PANTALON3.jpg" alt="image d un chapeau"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Pantalon denim multipoches Gris</p>
+                <h4>3,300 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/PANTALON4.jpg"><img src="../image/PANTALON4.jpg" alt="image d un chapeau"loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Pantalon chino slim Beige</p>
+                <h4>2,000 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+        </div>
+
+        <!-- Pagination et navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <h2 id="cstm">COSTUME</h2>
+     <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="../image/COSTUME1.jpg"><img src="../image/COSTUME1.jpg" alt="Costume"loading="lazy"></a>
+                <h3>R.11 - LND</h3>
+                <p>Jakamen Costume Ceremonial 001/Black</p>
+                <h4>34,800 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/COSTUME2.jpg"><img src="../image/COSTUME2.jpg" alt="Costume"loading="lazy"></a>
+                <h3>R.11 - LND</h3>
+                <p>Jakamen Costume Ceremonial 394/White </p>
+                <h4>28,500 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/COSTUME3.jpg"><img src="../image/COSTUME3.jpg" alt="Costume"loading="lazy"></a>
+                <h3>R.11 - LND</h3>
+                <p>Jakamen Costume 019/Dark Navy Blue</p>
+                <h4>26,800 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/COSTUME4.jpg"><img src="../image/COSTUME4.jpg" alt="Costume"loading="lazy"></a>
+                <h3>R.11 - LND</h3>
+                <p>Jakamen Costume 910/Navy Blue – 6</p>
+                <h4>29,800 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+        </div>
+
+        <!-- Pagination et navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <h2 id="baskt">BASKET</h2>
+     <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="../image/BASKET1.jpg"><img src="../image/BASKET1.jpg" alt="image d une basket" loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Basket de sport BLANC</p>
+                <h4>4,500 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/BASKET2.jpg"><img src="../image/BASKET2.jpg" alt="image d une basket" loading="lazy" alt="Image"></a>
+                <h3>R.11 - LND</h3>
+                <p>Basket de sport easy fit KAKI</p>
+                <h4>3,300 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/BASKET3.jpg"><img src="../image/BASKET3.jpg" alt="image d une basket" loading="lazy" ></a>
+                <h3>R.11 - LND</h3>
+                <p>Baskets en mesh Beige</p>
+                <h4>3,500 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="../image/BASKET4.jpg"><img src="../image/BASKET4.jpg" alt="image d une basket" loading="lazy" ></a>
+                <h3>R.11 - LND</h3>
+                <p>Baskets en simili et mesh Kaki</p>
+                <h4>3,900 DA</h4>
+                <a href="paimen.html"><button>Acheter</button></a>
+            </div>
+        </div>
+
+        <!-- Pagination et navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+        });
+    </script>
+
+</body>
+</html>

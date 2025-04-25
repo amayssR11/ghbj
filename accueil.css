@@ -1,0 +1,268 @@
+﻿
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    body{
+        background-color: rgb(144, 148, 148);
+        margin: 0;
+        padding: 0%;
+        font-family: "Montserrat", sans-serif;
+        list-style: none;
+    }
+
+  
+ 
+#section1 {
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    width: 100%; /* Assure que la section prend toute la largeur */
+   /* background-image: url(../image/back.jpg);*/
+    background: url('https://img.freepik.com/photos-premium/fond-noir-clavier-touches-fond-noir_270292-1168.jpg?w=1380') no-repeat center center;
+    background-size:cover; /* Ajuste l'image pour couvrir toute la section */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    display: flex;
+    backdrop-filter: blur(5px);
+    
+}
+   #ff{
+    font-size:14px;
+    border:2px solid #29d9d5;
+    padding:5px 20px;
+    transition: 0.5s;
+    font-weight: bolder;
+    
+   }
+   #ff:hover:hover{
+    color: rgb(0, 255, 183);
+  
+   }
+   
+ h1,p{
+    color: rgb(232, 241, 246);
+    text-align: center;
+    display:flex;
+
+}
+
+ li{  
+    list-style: none;
+}
+ a{  font-size: 1rem;
+    text-decoration: none;
+    color: aliceblue;
+ 
+   
+
+}
+ a:hover{
+    color: aqua;
+
+}
+header{
+   position: relative;
+   padding: 0 20px ;
+   background-color: rgba(0, 0, 0, 0.322);
+  box-shadow: inset 0px 7px 28px 8px rgb(0 255 183);
+    
+
+    
+}
+.navbar{
+display: flex;
+ margin:0 auto;
+ height: 60px;
+ justify-content: space-between;
+ align-items: center;
+
+}
+.navbar .logo a {
+    font-size: x-large;
+}
+.navbar .links {
+    display: flex;
+    gap: 3em;
+
+    
+
+}
+
+.navbar .links li a{
+
+    position: relative;
+
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:40px;
+    
+}
+.navbar .links li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: aqua;
+    border-radius: 5px;
+    transform-origin:right; 
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navbar .links li a:hover::after{
+    transform-origin:left;
+    transform: scaleX(1);
+
+}
+.buttom{
+    display: flex;
+    gap: 3em;
+   
+}
+.con{
+    color: rgb(249, 238, 238);
+    
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 50px;
+    
+}
+.con:hover{
+    color: aqua;
+    gap: 2em;
+}
+.log{
+    color:black;
+    padding: 10px;
+   background-color: rgb(238, 240, 240);
+    border-radius: 50px;
+    
+}
+.log:hover{
+    color:rgba(0, 0, 0, 0.322);
+    gap: 2em;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne les listes en haut */
+    flex-wrap: wrap;
+
+
+}
+
+.container{
+    max-width: 1170px;
+   
+    margin: auto;
+}
+footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    text-align: center;
+}
+.footer-color{
+    width: 25%;
+   
+
+
+}
+.footer-color h4{
+    padding: 0 15px;color: #ffffff;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+
+
+}
+.footer-color ul li a{
+    text-align: left;
+    color: rgb(192, 195, 195);
+   
+}
+.footer-color ul li{
+    text-align: left;
+}
+.footer-color ul li:not(:last-child){
+    margin-bottom: 10px;
+    transition: all 0.3 ease;
+}
+.footer-color ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+    
+}
+
+.social-links a{
+    color: #24262b;
+    display: inline-block;
+   width: 40px;
+   height: 40px;
+    text-align: left;
+    background-color: rgb(192, 195, 195);
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    
+
+    
+}
+.social-links a:hover{ color: aqua;
+    gap: 2em;
+}
+.vetement{
+    margin:  50 0px;
+    padding: 0 20px;
+
+
+}
+.vetement h1{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.vetement p{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15px;
+
+}
+.vetement-lise{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+
+
+}
+.vetement-box img{
+box-shadow: #24262b;
+ margin-bottom:15px ;
+   height: 145px;
+   width: 190px;
+   border-radius: 10px;
+
+   
+   
+}
+h3{
+
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.vetement-lise .vetement-box{
+    transition: 0.5s ease-out;
+    cursor: pointer;
+     padding: 0 10px;
+
+}
+.vetement-lise .vetement-box:hover{
+    box-shadow: 0 14px  28px rgb(0, 255, 183), 0 10px 10px rgb(0, 255, 183);
+    transform: scale(1.05);
+}
